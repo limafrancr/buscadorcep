@@ -1,0 +1,89 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(34, 86, 110);
+}
+
+.title{
+    font-size: 2.2rem;
+    color: white;
+    animation: fliptitle 2s;
+}
+
+
+@keyframes fliptitle{
+    from{
+        transform: rotatex(90deg);
+        to{
+            transform: rotateX('0deg');
+        }
+    }
+}
+
+.containerinput{
+    background-color: rgb(50, 50, 78);
+    padding: 15px;
+    margin:  34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px #fefeff;
+}
+
+.containerinput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: transparent;
+    outline: none;
+    margin-right: 8px;
+}
+
+
+.buttonsearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonsearch:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(30, 70, 88);
+    width: 19rem;
+    border-radius: 1rem;
+}
+
+main h2{
+    color: rgb(7, 255, 102);
+}
+
+main span{
+    color: white;
+}
+
+footer{
+    margin: 7rem;
+    display: flex;
+}
+
+footer h1{
+    color: white;
+    font-size: 1rem;
+}
+
+footer h1 a{
+    color: white;
+}
