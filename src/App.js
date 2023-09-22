@@ -14,16 +14,16 @@ function App() {
       return;
     }
 
-    try {
-      const response = await api.get(`${input}/json`);
-      setCep(response.data)
-      setinput("")
+     try {
+       const response = await api.get(`${input}/json`);
+       setCep(response.data)
+        setinput("")
+      }
+     catch {
+       alert("Ops! erro ao buscar aqui")
+       setinput("")
     }
-    catch {
-      alert("ops erro ao buscar aqui")
-      setinput("")
-    }
-  }
+   }
 
 
   return (
@@ -33,7 +33,8 @@ function App() {
 
       <div className="containerinput">
         <input type="text" placeholder="Digite seu CEP..." value={input} onChange={(e) => setinput(e.target.value)}></input>
-        <button className="buttonsearch" onClick={handsearch}><FiSearch size={25} color='#000000'></FiSearch></button>
+        
+        <button className="buttonsearch" onClick={handsearch}><FiSearch size={25} color='#3130c7'></FiSearch></button>
       </div>
 
       {Object.keys(cep).length > 0 && (  //Ultilizada pra ver se há algo dentro, se o tamanho for maios que zero vai mostrar as informacoes

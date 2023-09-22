@@ -24,19 +24,19 @@
 }
 
 .containerinput{
-    background-color: rgb(50, 50, 78);
+    background-color: transparent;
     padding: 15px;
     margin:  34px 0;
     display: flex;
     border-radius: 8px;
-    box-shadow: 1px 3px 8px #fefeff;
+    box-shadow: 1px 3px 8px #f1eff3;
 }
 
 .containerinput input{
     background-color: transparent;
     border: 0;
     font-size: 20px;
-    color: transparent;
+    color: white;
     outline: none;
     margin-right: 8px;
 }
